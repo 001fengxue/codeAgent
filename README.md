@@ -1,4 +1,4 @@
-下载对应语言的源码压缩包，解压后按以下步骤配置和运行。
+本仓库提供同一个项目（mewcode）的三种语言实现，分别位于 `golang/`、`java/`、`python/` 三个目录。进入对应语言目录后，按以下步骤配置和运行。
 
 
 
@@ -36,6 +36,8 @@ mcp_servers:
 环境要求：Go 1.25+
 
 ```Bash
+cd golang
+
 # 构建
 go build -o mewcode ./cmd/mewcode
 
@@ -53,6 +55,8 @@ go test ./...
 > Windows推荐在powershell使用
 
 ```Bash
+cd java
+
 # 构建，目前是已经构建好了，可以直接运行
 gradlew shadowJar
 
@@ -65,6 +69,8 @@ java -jar build/libs/mewcode.jar
 环境要求：Python 3.11+、 [uv](https://docs.astral.sh/uv/)
 
 ```Bash
+cd python
+
 # 安装依赖
 uv sync
 
