@@ -1,8 +1,4 @@
-本仓库提供同一个项目（mewcode）的三种语言实现，分别位于 `golang/`、`java/`、`python/` 三个目录。进入对应语言目录后，按以下步骤配置和运行。
-
-
-
-## 配置 LLM 和 MCP
+本仓库提供同一个项目（mewcode）的三种语言实现，分别位于 `golang/`、`java/`、`python/` 三个目录。进入对应语言目录后，按以下步骤配置和运行。## 配置 LLM 和 MCP
 
 编辑 `.mewcode/config.yaml` ，填入你的 LLM 提供商信息：
 
