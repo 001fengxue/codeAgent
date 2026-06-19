@@ -40,7 +40,7 @@ public class MewCode {
                 config.getHooks() != null ? config.getHooks() : List.of()
         );
 
-        var program = new Program(model);
+        var program = new Program(model).withAltScreen();
 
         model.setProgram(program);
 

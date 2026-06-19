@@ -301,7 +301,9 @@ public class MewCodeModel implements Model {
         if (msg instanceof WindowSizeMessage wsm) {
             this.width = wsm.width();
             this.height = wsm.height();
-            return UpdateResult.from(this);
+            // Clear the screen on resize so the previous frame's lines don't
+            // linger and stack up (the renderer does not erase stale rows).
+            return UpdateResult.from(this, Command.clearScreen());
         }
 
         // ── Ctrl+C / QuitMessage: interrupt streaming or quit ──────────

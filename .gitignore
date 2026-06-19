@@ -8,3 +8,4 @@
 *.iml
 *.log
 **/.codefuse/
+**/.DS_Store
